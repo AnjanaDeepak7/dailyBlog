@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 40vw;
+  min-width: 400px;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  border: 1px solid rgba(0, 0, 0, 0.545);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: skyblue;
+  display: flex;
+  justify-content: space-between;
+}
+header svg {
+  padding: 0.5rem;
+  font-size: 4rem;
+}
+h1 {
+  padding: 0.5rem;
+}
+nav {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav input[type="searchbox"] {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover,
+nav a:focus {
+  color: yellow;
+}
+main {
+  min-height: calc(100vh - 155px);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+footer {
+  background: skyblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+footer p {
+  font-size: 1.2rem;
+}
+h2 {
+  padding: 0 0.5rem;
+}
+form {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+form input[type="text"] {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+form textarea {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+form button {
+  background: none;
+  border: 1px solid black;
+  color: black;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+form button:hover {
+  background: green;
+  color: white;
+  border-color: green;
+  transition: all 0.3s linear;
+}
+.about {
+  margin: 0.5rem;
+}
+.about h2 {
+  margin: 0.5rem 0;
+}
+.posts {
+  margin: 0.5rem;
+}
+.posts article {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.442);
+}
+.posts a {
+  text-decoration: none;
+  color: black;
+}
+.posts a p {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.posts p {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.post-page {
+  margin: 0.5rem;
+}
+.post-page p {
+  padding: 0.5rem;
+}
+.post-page button {
+  margin: 0.5rem 0;
+  background: red;
+  border: 1px solid red;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.post-page button:hover {
+  opacity: 0.6;
+}
+.post-page a {
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  color: black;
+}
